@@ -1,0 +1,9 @@
+compatibility_date = "2025-11-17"
+main = "src/index.ts"
+name = "decap-proxy"
+
+# Decommenta e modifica SOLO se vuoi usare un dominio personalizzato (es. decap.tuodominio.com)
+# route = { pattern = "decap.tuodominio.com", zone_name = "tuodominio.com", custom_domain = true }
+
+[vars]
+GITHUB_REPO_PRIVATE = "0"
