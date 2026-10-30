@@ -1,8 +1,10 @@
 name = "lazzerini-sito"
-compatibility_date = "2026-10-30"
+compatibility_date = "2026-10-30" # o una data recente
 
 [assets]
 directory = "./"
-binding = "ASSETS"
 not_found_handling = "single-page-application"
-run_worker_first = ["/admin/*"]
+run_worker_first = [
+  "/admin/*",
+  "!/admin/assets/*"
+]
