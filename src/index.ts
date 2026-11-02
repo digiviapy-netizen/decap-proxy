@@ -100,6 +100,13 @@ export default {
 		if (url.pathname === '/callback') {
 			return handleCallback(url, env);
 		}
+		if (url.pathname === '/debug') {
+  return new Response(JSON.stringify({
+    hasId: !!env.GITHUB_OAUTH_ID,
+    hasSecret: !!env.GITHUB_OAUTH_SECRET,
+    idPrefix: env.GITHUB_OAUTH_ID ? env.GITHUB_OAUTH_ID.slice(0, 4) : null
+  }), { headers: { 'Content-Type': 'application/json' } });
+}
 		return new Response('Hello 👋');
 	},
 };
