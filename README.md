@@ -159,3 +159,4 @@ If you do manage to authenticate using the GitHub OAuth App, but DecapCMS gives 
 
 
     
+
